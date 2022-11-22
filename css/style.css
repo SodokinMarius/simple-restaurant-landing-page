@@ -1,0 +1,65 @@
+/*------------ fonts -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* -------VARIABLES ---------*/
+:root{
+    --main-color:#eaa023;
+    --dark:#0c1023;
+    --dark-light:#191f3a;
+    --white:#ffffff;
+    --white-light:#c8c8c8;
+    --shadow:0 0 15px rgba(0,0,0,25);
+    --cursive-font:'Dancing Script', cursive;
+    scroll-behavior: smooth;
+}
+
+/*-----GLOBAL SETTING ------------*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+
+}
+
+::before,::after{
+ box-sizing: border-box;
+}
+
+body{
+   font-size: 16px;
+   line-height: 1.5;
+   -webkit-top-highlight-color:transparent; 
+   /*background-color: red;*/
+}
+
+.contenainer-bg{
+    background-color: var(--dark-light);
+    height: max-content;
+}
+
+.text-nav  *{
+    font-size:1.45rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    color:var(--white);
+    transition: color 0.3s ease;
+
+}
+
+.text-nav li a:hover{
+    color: var(--main-color) !important;
+
+}
+
+.dropm
+{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bolder;
+    background: #0c1023;
+}
+
+/*============HADER END =========================*/
