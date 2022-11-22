@@ -181,6 +181,102 @@ main{
      background-color: var(--main-color) !important;
  }
 
+ /* ------------------ HOME SECTION END -----------------*/
+
+ /* ----------- ABOUT SECTION START ------------------*/
+.section-padding{
+    padding: 80px 0;
+}
+
+
+.section-title{
+    width: 100%;
+    padding : 0 15px;
+    text-align:center;
+    margin-bottom: 60px;
+}
+
+.section-title h2{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.section-title ::before{
+    content:attr(data-title);
+    display: block;
+    font-size: 24px;
+    color:var(--main-color) ;
+    font-family: var(--cursive-font);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.about-section{
+    background-color: var(--dark-light);
+    color: var(--white);
+}
+
+.about-text,.about-img{
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-text h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+   
+}
+
+.about-text p{
+    margin: 0 0 15px;
+}
+
+.about-text .btn{
+   margin: 15px 0 0; 
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*Très IMPORTANT POUR LUI POUR LUI ADAPTER DANS L'IMAGE*/
+.about-img .img-box{
+ position: relative;
+}
+
+.about-img .img-box h3{
+    position: absolute;
+   color: var(--dark-light);
+    left: 50%;
+    top:50%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-family: var(--cursive-font);
+    font-weight: bold;
+}
+
+.about-img .img-box::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border:5px solid var(--main-color);
+    margin: 25% ;
+    left:calc(50% -50px);
+    top:calc(50% -50px);
+
+    animation: spin01 10s linear infinite ;
+    text-transform: capitalize;
+}
+/*----------- ABOUT SECTION END --------------*/
+
+
+
 /* ==========================MAIN END ======================== */
 /* ============= FOOTER START ===================*/
 
