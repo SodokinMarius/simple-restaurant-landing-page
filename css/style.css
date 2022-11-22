@@ -49,10 +49,11 @@ body{
 
 }
 
-.text-nav li a:hover{
+.text-nav li a:hover,.text-main{
     color: var(--main-color) !important;
 
 }
+
 
 .dropm
 {
@@ -63,3 +64,35 @@ body{
 }
 
 /*============HADER END =========================*/
+
+
+/* ============= FOOTER START ===================*/
+
+footer{
+    position: relative;
+    top: 20px;
+    padding: 5px 0 0 0;   
+    background: url("../images/footer_bg.jpg") 50% 0 no-repeat fixed !important;
+   
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+   
+}
+
+.list-group li  {
+    border-bottom: .5px solid var(--main-color);
+    padding-bottom: 4px;
+}
+
+.list-group li:hover{
+    border-bottom: 1px solid var(--white-light);
+    padding-bottom: 4px;
+    color: var(--main-color);
+}
+/*===============  FOOTER END ====================*/

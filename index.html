@@ -83,6 +83,87 @@
     </div>
     </header>
 
+     
+ <footer>
+    <div class="container position-relative " style="margin-top : 20px;">
+
+        <div class="row">
+         
+         <div class="col col-sm-6 col-md-3 " style="margin-top : 30px;">
+            <h3 class="text-main">SERVICES CATEGORIES</h3>
+           
+            <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item bg-transparent text-light"> <a href="#food">Foods </a></li>
+                <li class="list-group-item bg-transparent text-light"><a href="#drink">Drinks</a></li>
+                <li class="list-group-item bg-transparent text-light"><a href="#suplement">suplements</a></li>
+                <li class="list-group-item bg-transparent text-light"> <a href="#other">others </a></li>
+              </ul>
+           
+         </div>
+
+         <div class="col col-sm-6 col-md-3 " style="margin-top : 30px;">
+            <h3 class="text-main">HELP</h3>
+            <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item list-group-item bg-transparent text-light"><a href="#contact">Contact us</a></li>
+                <li class="list-group-item list-group-item bg-transparent text-light"><a href="#faq">FAQ</a></li>
+                <li class="list-group-item list-group-item bg-transparent text-light"><a href="#accessibility">Accessibility</a></li>
+                <li class="list-group-item list-group-item bg-transparent text-light"> <i class="bi bi-phone"></i>+229 90500075 / +229 94340400 </li>
+                <li class="list-group-item list-group-item bg-transparent text-light"><i class="bi bi-email"></i>yaomariussodokin@gmail.com</li>
+              </ul>
+         </div>
+
+         <div class="col col-sm-6 col-md-3 " style="margin-top : 30px;">
+           <h3 class="text-main"> ABOUT</h3>          
+            <ul class="list-group list-group-flush bg-transparent ">
+                <li class="list-group-item bg-transparent text-light" id="test"><a href="#history">Our History</a></li>
+                <li class="list-group-item bg-transparent text-light"><a href="#home">GOD <span>INSIDE</span></a></li>
+                <li class="list-group-item bg-transparent text-light"><a href="#service">General services</a></li>
+                <li class="list-group-item bg-transparent text-light"><a href="#health">Health </a></li>
+              </ul>
+        </div>
+
+        <div class="col col-sm-6 col-md-3 " style="margin-top : 50px;">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-main">ABONNEMENT<h4>
+                    <form action="{% url 'ecommerceApp:search-product' %}" method="GET">
+                        <div class="input-group mb-3">
+                            <label for="sub" class="mb-2 p-2 fs-6">Kindly put your email here in order to receive 10% on you first commande</label>
+                            <input type="text" class="form-control" placeholder=" Enter your subscibing mail..." aria-label="Recipient's username" aria-describedby="button-addon2" name="product_keyword" required>
+                            <button class="btn btn-outline-primary" type="submit" id="button-addon2">Subcribe</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+              
+             <div class="row my-3">
+                <div class="col"> 
+                    <h4 class="text-warning">SOCIAL NETWORK<h4>
+                    <ul class="list-inline text-md-end " class="mb-3 p-3">
+                      
+                      <li class="list-inline-item" class="text-decoration-none text-dark" data-bs-toggle="tooltip"
+                      title="LinkedIn"><a href="https://www.linkedin.com/in/yao-marius-sodokin-b796b1214/"><i class="bi bi-linkedin text-white"></i></a> </li>
+      
+                      <li class="list-inline-item"  class="text-decoration-none text-dark" data-bs-toggle="tooltip"
+                      title="Twitter"><a href="https://twitter.com/MariusSodokin"><i class="bi bi-twitter text-white"></i></a></li>
+      
+                      <li class="list-inline-item"  class="text-decoration-none text-dark" data-bs-toggle="tooltip"
+                      title="Telegram"><a href="https://web.telegram.org/z/"><i class="bi bi-telegram text-white"></i></a></li>
+      
+                      <li class="list-inline-item" class="text-decoration-none text-dark" data-bs-toggle="tooltip"
+                      title="Facebook"><i class="bi bi-facebook text-white"></i></li>
+                      <li class="list-inline-item" class="text-decoration-none text-dark" data-bs-toggle="tooltip"
+                      title="Instagram"><i class="bi bi-instagram text-white"></i></li>    
+                  </ul>
+      
+                  </div>
+             </div>
+
+        </div>
+        </div>
+    </div>
+
+ </footer>
 
   <!--Bootstrap && popper  scripts integration-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
