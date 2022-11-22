@@ -66,6 +66,122 @@ body{
 /*============HADER END =========================*/
 
 
+/*================= MAIN START ================================*/
+main{
+    min-height: 80vh;
+}
+     /*-----------section 1  home -------------------*/
+
+
+/*========= HOME SECTION ==========*/
+.home-section{
+    overflow:hidden;
+ 
+ }
+   
+ .home-section::before{
+       content:'';
+         position: absolute;
+         left:0;
+         top:0;
+         height: 100%;
+         width: 100%;
+         background-color: #000000;
+         opacity: 0.7;
+         z-index: -1;
+ 
+ }
+
+ .home-section .min-vh-100{
+     padding: 100px 0;
+ }
+ .home-section .home-bg{
+     position: absolute;
+     left:0;
+     top:0;
+     height: 100%;
+     width: 100%;
+     z-index: -2;
+     background-image: url("../images/background.jpeg");
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     z-index: -2;
+     animation: zoomOut 20s ease infinite ;
+ }
+ 
+ @keyframes zoomOut{
+     0%,100%{
+         transform: scale(1);
+     }
+     50%{
+         transform: scale(1.1);
+ 
+     }
+ }
+ 
+ @keyframes spin01{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+ }
+ 
+ 
+ .home-text{
+   padding:0 15px;
+   max-width: 700px;
+   width: 100%;
+   margin: auto;
+   text-align: center;
+   color: var(--white);
+   margin-top: 40px;
+ }
+ 
+ .home-text h1{
+     font-family: var(--cursive-font);
+     font-size: 60px;
+     line-height: 85px;
+     margin: 0 0 5px;
+     
+ }
+ 
+ .home-text p{
+     margin:0 0  30px;
+     font-size: 20px;
+ }
+ 
+ 
+ /* BUTTONS*/
+ .btn{
+     display: inline-block;
+     padding:10px 30px;
+     background-color: transparent;
+     border-radius:30px ;
+     text-transform: capitalize;
+     font-weight: 500;
+     transition: all 0.3s ease;
+     font-size: 25px;
+     cursor: pointer;
+     font-family: inherit;
+     color: var(--main-color);
+     line-height: 1.5;
+     user-select: none;
+     border:none;
+ }
+ 
+ .btn-default{
+     border: 2px solid var(--main-color) !important;
+ }
+ 
+ .btn-default:hover{
+     color: var(--white) !important;
+     background-color: var(--main-color) !important;
+ }
+
+/* ==========================MAIN END ======================== */
 /* ============= FOOTER START ===================*/
 
 footer{
