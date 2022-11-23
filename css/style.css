@@ -684,7 +684,9 @@ footer a {
   .card{
     margin: auto;
   }
-  
+  .img_contact{
+    width: 100vw;
+  }
   
 }
 
@@ -695,7 +697,11 @@ footer a {
       width: 100%;
     
   }
-  .card{
+
+  .img_contact,.form{
+    width: 90vw;
+  }
+  .card,.img_contact,.form{
     margin: auto;
     /*transform: scale(1.2); */
   
