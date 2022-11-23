@@ -663,6 +663,9 @@ footer a {
       margin-top: 40px;
   }
 
+  .card{
+    margin: auto;
+  }
   
   
 }
@@ -673,6 +676,11 @@ footer a {
   {
       width: 100%;
     
+  }
+  .card{
+    margin: auto;
+    /*transform: scale(1.2); */
+  
   }
 
 
