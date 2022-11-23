@@ -461,6 +461,123 @@ margin: 0 0 3px;
 
 /*------------TESTIMONIAL SECTION END----------------------*/
 
+
+
+/*============ MENU SECTION =========== */
+.menu-section{
+    background-color: var(--white);
+    padding: 60px;
+}
+
+.menu-section .section-title{
+    margin-bottom: 40px;
+}
+
+.menu-tabs{
+  
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;;
+}
+
+.menu-tab-item{
+    font-size:  18px;
+    font-family: inherit;
+    text-transform: capitalize;
+    border:none;
+    background-color: transparent;
+    font-weight: 500;
+    color: var(--dark-light);
+    cursor: pointer;
+    margin: 0 10px 10px;
+    padding: 0 10px 10px;
+
+}
+
+.menu-tab-item.active
+{
+
+    color: var(--main-color);
+    transition: color 0.3s ease;
+}
+
+
+
+
+.menu-tab-content .active{
+display:flex;
+}
+
+.menu-item::after{
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    border-bottom:1px dashed var(--dark);
+}
+
+.menu-item:nth-last-of-type(2):after,
+.menu-item:nth-last-of-type(1):after{
+border:none;
+
+}
+
+
+.menu-item{
+    width: 50%;
+    padding:20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.menu-item-title{
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-title {
+    width: 100px;
+    margin-right: 15px;
+   max-width: calc(100% -80px);
+
+}
+
+.menu-item-title h3 {
+    font-size: 16px;
+    color: var(--dark);
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+    display: inherit;
+
+} 
+
+.menu-item:hover  .menu-item-title h3 {
+    color: var(--main-color);
+
+}
+
+.menu-item-title  img{
+ max-width: 100px;
+ margin-right:15px ;
+}
+
+.menu-item .item-price{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color);
+    transition: color 0.3s ease;
+}
+
+
+.menu-item:hover .item-price{
+    color: var(--dark);
+}
+
 /* ==========================MAIN END ======================== */
 /* ============= FOOTER START ===================*/
 
