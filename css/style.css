@@ -401,6 +401,66 @@ main{
 }
 
 /*----------- TEAM SECTION END ------------*/
+
+
+/*------------TESTIMONIAL SECTION START----------------------*/
+
+
+.testimonials-section{
+    background-color: var(--dark);
+    color: var(--white);
+    padding-bottom: 50px;;
+}
+
+.testi-item{
+    margin: 0 15px 15px; 
+    border:2px solid var(--dark-light);
+    padding: 30px;
+    box-shadow: var(--shadow);  
+    border-radius: 8px;
+}
+
+.testi-item:hover .testi-author img{
+    border-color: var(--main-color);
+}
+
+.testi-author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testi-author h3{
+font-size: 1.5rem;
+text-transform: capitalize;
+margin: 0 0 3px;
+}
+
+.testi-author span{
+    display:block;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.testi-author img{
+   max-width: 100px;
+   border-radius: 50%;
+   border: 3px solid var(--dark-light);
+   box-shadow: var(--shadow);
+   transition: border-color 0.5s ease;
+}
+
+.testi-author p,.testi-item p{
+     margin: 15px 0;
+}
+
+.testi-item .testi-ratings i {
+     font-size: 16px;
+     color: var(--main-color);
+}
+
+/*------------TESTIMONIAL SECTION END----------------------*/
+
 /* ==========================MAIN END ======================== */
 /* ============= FOOTER START ===================*/
 
@@ -432,3 +492,81 @@ footer a {
     color: var(--main-color);
 }
 /*===============  FOOTER END ====================*/
+
+
+/* ================= RESPONSIVITE =================*/
+
+/*----------- RESPONSIVE------------------*/
+
+@media(max-width:991px)
+{
+  
+    .testi-item{
+        width: calc(50%-30px);
+    }
+
+    .team-item
+  {
+      width: 50%;
+    
+  }
+
+  .team-item:not(:last-child){
+    margin-bottom: 75px;
+  }
+
+}
+@media(max-width:767px)
+{
+  .home-text h1{
+      font-size: 50px;
+      line-height: 65px;
+  }
+
+  .menu-item,
+  .about-text,
+  .about-img{
+      width: 100%;
+  }
+
+  .team-item
+  {
+      width: 50%;
+    
+  }
+
+  .team-item:not(:last-child){
+    margin-bottom: 75px;
+  }
+
+ .footer-item{
+     width: 100%;
+ }
+
+ .footer-item:not(:last-child)
+ {
+     margin-bottom: 30px;
+ }
+  
+  .menu-item:nth-last-of-type(2):after{
+      border-bottom: 2px dashed var(--dark-light);
+  }
+
+  .about-img{
+      margin-top: 40px;
+  }
+
+  
+  
+}
+
+@media(max-width:575px)
+{
+    .testi-item,.team-item
+  {
+      width: 100%;
+    
+  }
+
+
+}
